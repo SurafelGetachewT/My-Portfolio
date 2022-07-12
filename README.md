@@ -1,7 +1,7 @@
 # My-Portfolio
 
 > Portfolio: Mobile Version and Desktop version
-**This is a setup of mobile version and desktop version for potifolio website created by using the template provided in Figma.**
+**This is a setup to mobile version and desktop version for potifolio website created by using the template provided in Figma.**
 
 ## Built With
 
