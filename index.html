@@ -23,6 +23,12 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+          <div class="mobile-item">
+            <div class="item close"><a href="#" class="closeMenu"><img src="images/close.svg" alt="close" width="12" height="12"></a></div>
+            <div class="mobile-nav"><a href="#portfolio" class="closeMenu">Portfolio</a></div>
+            <div class="mobile-nav"><a href="#about" class="closeMenu">About</a></div>
+            <div class="mobile-nav"><a href="#contact" class="closeMenu">Contact</a></div>
+          </div>
           <img class="menu-bar" src="images/hamburger.png" alt="Menu"/>
         </nav>
     </header>
@@ -63,7 +69,7 @@
                 </ul>
             </div>
         </section>
-        <section class="works">
+        <section class="works" id="portfolio">
             <div class="card">
                 <div>
                     <img src="images/snapshoot_portfolio.png" alt="Snapshoot of portfolio">
@@ -225,7 +231,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="top">
                 <div>
                     <p class="about-top">About Myself</p>
@@ -596,7 +602,7 @@
                     </form>
                 </div>
             </div>
-            <div class="mob-contact">
+            <div class="mob-contact" id="contact">
                 <h2>Contact me</h2>
                 <p>If you have an application you are interested in developing, a feature that you need built 
                     or a project that needs coding. I’d love to help with it </p>
@@ -621,5 +627,6 @@
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
