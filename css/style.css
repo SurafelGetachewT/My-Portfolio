@@ -831,9 +831,20 @@ form button:hover {
   left: 0;
   right: 0;
   top: 0;
-  background-color: white;
+  background-color: #6070fff0;
+  mix-blend-mode: multiply;
   text-align: left;
   display: none;
+}
+
+.mobile-item a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #fff;
+}
+
+.mobile-nav {
+  margin-top: 40px;
 }
 
 .mobile-item .close {
