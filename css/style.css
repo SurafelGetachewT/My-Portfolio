@@ -842,7 +842,7 @@ form button:hover {
   font-style: normal;
   color: #fff;
   height: 24px;
-  left: 0px;
+  left: 0;
   right: 68px;
   font-weight: 500;
   font-size: 26px;
@@ -857,10 +857,8 @@ form button:hover {
   padding-top: 62px;
   text-align: right;
   padding-right: 38px;
-  font-weight: lighter;
-  
+  font-weight: lighter; 
 }
-
 
 @media only screen and (min-width: 768px) {
   header {
