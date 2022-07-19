@@ -825,10 +825,6 @@ form button:hover {
 }
 
 .mobile-item {
-  display: none;
-}
-
-.mobile-item {
   position: fixed;
   height: 100%;
   width: 100%;
