@@ -34,6 +34,11 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
+##  Acknowledgment
+
+We would like to acknowledge Figma for the design template of this portfolio project.
+
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
