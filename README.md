@@ -36,8 +36,7 @@ Feel free to check the [issues page](../../issues/).
 
 ##  Acknowledgment
 
-We would like to acknowledge Figma for the design template of this portfolio project.
-
+We would like to acknowledge Figma for their design template we used in this portfolio project.
 
 ## Show your support
 
