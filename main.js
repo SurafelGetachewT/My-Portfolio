@@ -69,6 +69,97 @@ const projectDetail = [{
 
 const popupModal = document.querySelector('#portfolioPopup');
 
+for (let i = 0; i < projectDetail.length; i += 1) {
+  let tech = '';
+  let experienceList = '';
+
+  for (let j = 0; j < projectDetail[i].technologies.length; j += 1) {
+    tech += `<li class="tag1"><a class="tag-text" href="#">${projectDetail[i].technologies[j]}</a></li>`;
+  }
+
+  for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
+    experienceList += (k === 0) ? `<li><a href="#" class="canopy">${projectDetail[i].exprience[k]}</a></li>` : `<li><a class="role-text" href="#">${projectDetail[i].exprience[k]}</a></li>`;
+    if (k !== projectDetail[i].exprience.length - 1) experienceList += '<li><a href="#"><img src="./images/Counter.png" alt="dot"></a></li>';
+  }
+  document.querySelector('#portfolio').innerHTML += `<section class="works" id="portfolio">
+  <div class="card">
+      <div>
+          <img src="${projectDetail[i].imageMobile}" alt="Snapshoot of portfolio">
+      </div>
+          <div class="left-item">
+                    <div class="primary-text">
+                        <h2 class="project-title">${projectDetail[i].title}</h2>
+                        <div class="frame2">
+                            <div class="client">
+                                <div class="roles" >
+                                    <p class="role-text">${experienceList}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="secondary-text">${projectDetail[i].desription}</p>
+                    </div>
+                    <div>
+                        <ul class="tags">
+                            <li>
+                                <p class="tag-text">${tech}</p>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="action">
+                        <button data-index = "${i}" class="first_button">See Project</button>
+                      </div>      
+              </div>       
+      </div>
+  </div>
+</section>`;
+}
+
+for (let i = 0; i < projectDetail.length; i += 1) {
+  let tech = '';
+  let experienceList = '';
+
+  for (let j = 0; j < projectDetail[i].technologies.length; j += 1) {
+    tech += `<li class="tag1"><a class="tag-text" href="#">${projectDetail[i].technologies[j]}</a></li>`;
+  }
+
+  for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
+    experienceList += (k === 0) ? `<li><a href="#" class="box canopy">${projectDetail[i].exprience[k]}</a></li>` : `<li><a class="role-text" href="#">${projectDetail[i].exprience[k]}</a></li>`;
+    if (k !== projectDetail[i].exprience.length - 1) experienceList += '<li><a href="#"><img src="./images/Counter.png" alt="dot"></a></li>';
+  }
+  document.querySelector('#portfolio-desk').innerHTML += `<section class="portifolio-list" id="portfolio-desk">
+  <div class="portifolio-card">
+      <div class="portifolio-image">
+          <img src="${projectDetail[i].image}" alt="Snapshoot of portfolio">
+      </div>
+      <div class="left-block">
+          <div class="primary-placeholder">
+              <h2 class="project-title">${projectDetail[i].title}</h2>
+              <div class="frame2">
+                  <div class="client">
+                      ${experienceList}
+                  </div>
+              </div>
+          </div>
+          <div class="primary-text">
+              <p>${projectDetail[i].desription}</p>
+          </div>
+          <div class="tags">
+              <ul class="tags">
+                  <li>
+                      <p class="tag-text">${tech}</p>
+                  </li>
+              </ul>
+          </div>
+          <div class="action">
+              <button data-index = "${i}" class="see-project">See Project</button>
+          </div>
+      </div>
+  </div>
+</section>`;
+}
+
 const displayModal = (i) => {
   let tech = '';
   let techPop = '';
