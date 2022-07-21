@@ -15,6 +15,10 @@ document.querySelector('#form').addEventListener('submit', (e) => {
         e.target[i].parentElement.nextElementSibling.innerText = 'Please enter your email in lowercase';
         e.target[i].parentElement.nextElementSibling.style.color = 'red';
         e.preventDefault();
+      } else if (e.target[i].type === 'email' && regex.test(e.target[i].value) !== e.target[i].value) {
+        e.target[i].parentElement.nextElementSibling.textContent = 'Please enter a valid email address';
+        e.target[i].parentElement.nextElementSibling.style.color = 'red';
+        e.preventDefault();
       } else {
         e.target[i].parentElement.nextElementSibling.style.display = 'none';
         e.target[i].parentElement.nextElementSibling.innerText = '';
