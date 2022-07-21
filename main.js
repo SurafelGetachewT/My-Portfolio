@@ -19,6 +19,7 @@ const projectDetail = [{
   image: './images/desktop/portfolio1.svg',
   imageMobile: './images/snapshoot_portfolio.png',
   imageMobilePopup: './images/snapshoot_portfolio.png',
+  imagePopup: './images/desktop/portfolio1.svg',
   seeLive: 'https://surafelgetachewt.github.io/surafel-portifolio.github.io/',
   seeSource: 'https://github.com/SurafelGetachewT/My-Portfolio',
 },
