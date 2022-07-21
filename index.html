@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-214417857-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-214417857-1');
+	</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -241,62 +249,32 @@
                 </div>
             </div>
         </section>
-    </main>
     <section class="worksPopup" id="portfolioPopup">
     </section>
-
-    <footer class="main-section">
-        <div class="contact-form">
-            <div class="desk">
-                <div class="desk-contact">
-                    <h2>Contact me</h2>
-                    <p>If you have an application you are interested in developing, a feature that you need built 
-                        or a project that needs coding. I’d love to help with it </p>
-                    <form action="/form" method="post">
-                        <ul>
-                          <li class="name-form">
-                            <input type="text" placeholder="Yeremias" required maxlength="30">
-                          </li>
-                          <li class="name-form">
-                            <input type="email" placeholder="natajayanj14@gmail.com" required>
-                          </li>
-                          <li class="text-area">
-                            <textarea name="message" id="message" cols="30" required rows="10" maxlength="500" placeholder="Write your message here"></textarea>
-                          </li>
-                          <li class="get-btn">
-                            <button class="btn" type="submit" value="Get It Touch">
-                                Get It Touch
-                            </button>
-                          </li>
-                        </ul>
-                    </form>
-                </div>
-            </div>
-            <div class="mob-contact" id="contact">
+    <section class="contact-form" id="contact">
+        <div class="desk">
+            <div class="desk-contact">
                 <h2>Contact me</h2>
-                <p>If you have an application you are interested in developing, a feature that you need built 
-                    or a project that needs coding. I’d love to help with it </p>
-                <form action="/form" method="post">
-                    <ul>
-                      <li>
-                        <input type="text" placeholder="Yeremias" required maxlength="30">
-                      </li>
-                      <li>
-                        <input type="email" placeholder="natajayanj14@gmail.com" required>
-                      </li>
-                      <li>
-                        <textarea name="text" cols="30" required rows="10" maxlength="500" placeholder="Write your message here"></textarea>
-                      </li>
-                      <li>
-                        <button type="submit" value="Get It Touch">
-                          Get It Touch
-                        </button>
-                      </li>
-                    </ul>
-                  </form>
+                <p id="inner-div">If you have an application you are interested in developing, a feature that you need
+                    built or a project that needs coding. I’d love to help with it </p>
+                    <form action="https://formspree.io/f/xbjwrzvy" id="form" class="form" method="post">
+                        <ul class="inner-list">
+                          <li class="name-form"><input type="text" class="form-control" placeholder="Full name" name="name" id="name" size="40" maxlength="30">
+                          </li>
+                          <li class="name-form-error"> </li>
+                          <li class="email-form"><input type="email" class="form-control" name="email" id="email" placeholder="Email address">
+                          </li>  
+                          <li class="email-form-error"> </li>
+                          <li class="text-area"><textarea name="text" class="form-control" id="text" placeholder="Message"></textarea></li>
+                          <li class="text-area-error"> </li>
+                          <li class="get-btn" id="submit-btn"><button class="btn" type="submit">Get In Touch</button></li>
+                        </ul>
+                      </form>
             </div>
         </div>
-    </footer>
+      </section>
+    </main>
     <script src="main.js"></script>
+    <script src="validate.js"></script>
 </body>
 </html>
