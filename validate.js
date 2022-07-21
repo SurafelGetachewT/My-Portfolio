@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-useless-escape
 const regex = '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$';
 document.querySelector('#form').addEventListener('submit', (e) => {
   for (let i = 0; i < e.target.length; i += 1) {
