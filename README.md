@@ -1,7 +1,7 @@
 # My-Portfolio
 
 > Portfolio: Mobile Version and Desktop version
-**This is a setup to mobile version and desktop version for potifolio website created by using the template provided in Figma.**
+> **This is a setup to mobile version and desktop version for potifolio website created by using the template provided in Figma.**
 
 ## Built With
 
@@ -11,7 +11,7 @@
 ## Materials required for validation
 
 - follow this link :
- [HTML and CSS Linters link]( https://github.com/microverseinc/linters-config/tree/master/html-css)
+  [HTML and CSS Linters link](https://github.com/microverseinc/linters-config/tree/master/html-css)
 
 ## Get Started
 
@@ -26,15 +26,17 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@SurafelGetachewT](https://github.com/SurafelGetachewT)
 - Twitter: [@SuraGetch](https://twitter.com/SuraGetch)
-- LinkedIn:  [Linkedin](https://www.linkedin.com/in/surafel-getachew-80155b187/)
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/surafel-getachew-80155b187/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
+-github: [@aceDavon](https://github.com/aceDavon)
+
 Feel free to check the [issues page](../../issues/).
 
-##  Acknowledgment
+## Acknowledgment
 
 We would like to acknowledge Figma for their design template we used in this portfolio project.
 
