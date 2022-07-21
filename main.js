@@ -6,12 +6,8 @@ const displayMobileMenu = () => {
 const closeMobileMenu = () => {
   menuItem.style.display = 'none';
 };
-document
-  .querySelector('.menu-bar')
-  .addEventListener('click', displayMobileMenu);
-closeMobileItems.forEach((element) =>
-  element.addEventListener('click', closeMobileMenu)
-);
+document.querySelector('.menu-bar').addEventListener('click', displayMobileMenu);
+closeMobileItems.forEach((element) => element.addEventListener('click', closeMobileMenu));
 
 const projectDetail = [{
   title: 'Tonic',
@@ -87,10 +83,7 @@ const displayModal = (i) => {
   }
 
   for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
-    experienceList +=
-      k === 0
-        ? `<li class="list-main">${projectDetail[i].exprience[k]}</li>`
-        : `<li class="titles-item">${projectDetail[i].exprience[k]}</li>`;
+    experienceList += k === 0 ? `<li class="list-main">${projectDetail[i].exprience[k]}</li>` : `<li class="titles-item">${projectDetail[i].exprience[k]}</li>`;
   }
   document.querySelector('#portfolioPopup').innerHTML = `
   <div class="works-flex">
@@ -134,24 +127,10 @@ const displayModal = (i) => {
   popupModal.style.display = 'block';
 };
 
-document
-  .querySelectorAll('.first_button')
-  .forEach((row) =>
-    row.addEventListener('click', () =>
-      displayModal(row.getAttribute('data-index'))
-    )
-  );
-document
-  .querySelectorAll('.see-project')
-  .forEach((row) =>
-    row.addEventListener('click', () =>
-      displayModal(row.getAttribute('data-index'))
-    )
-  );
+document.querySelectorAll('.first_button').forEach((row) => row.addEventListener('click', () => displayModal(row.getAttribute('data-index'))));
+document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayModal(row.getAttribute('data-index'))));
 const closeModal = document.querySelector('#portfolioPopup');
 const closePopupModal = () => {
   closeModal.style.display = 'none';
 };
-document
-  .querySelector('.close-popup')
-  .addEventListener('click', closePopupModal);
+document.querySelector('.close-popup').addEventListener('click', closePopupModal);
